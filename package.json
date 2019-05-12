@@ -1,16 +1,14 @@
 {
-  "name": "admin-automation",
+  "name": "test",
   "version": "1.0.0",
-  "description": "Admin automated tests using WebDriverIO TypeScript and Jasmine",
+  "description": "WebDriverIO TypeScript and Jasmine",
   "scripts": {
     "lint": "tslint --fix -p .",
-    "my-build": "func() { npm run test1  \"$1\"  \"$2\"; }; func",
     "precommit": "npm run lint && npm run tsc  && ls",
     "pretest": "npm run tsc",
     "selenium-start": "node_modules/.bin/selenium-standalone start",
     "tsc": "tsc",
-    "test": "./node_modules/.bin/wdio ./src/config/conf.ts",
-    "alpine-test": "sh alpine-runner.sh"
+    "test": "./node_modules/.bin/wdio ./src/config/conf.ts --spec dist/tests/iframe.spec.js"
   },
   "dependencies": {
     "@types/node": "^10.12.18",

@@ -1,0 +1,23 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "outDir": "dist",
+    "types": [
+      "jasmine",
+      "jasminewd2",
+      "@wdio/sync",
+      "node"
+    ]
+  },
+  "exclude": [
+    "allure-results",
+    "dist",
+    "node_modules"
+  ]
+}
