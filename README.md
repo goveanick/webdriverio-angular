@@ -1,6 +1,6 @@
-Run `npm install` in your terminal
+1. Run `npm install` in your terminal
 
-In conf.ts - choose one browser at a time and comment out the rest. Example, to choose chrome browser, comment all browsers in capabilities except chrome like this
+2. In conf.ts - choose one browser at a time and comment out the rest. Example, to choose chrome browser, comment all browsers in capabilities except chrome like this
 
              capabilities: {
                 myChromeBrowser: {
@@ -32,4 +32,4 @@ In conf.ts - choose one browser at a time and comment out the rest. Example, to 
 
             },
 
-Run `npm run test` in your terminal to run cross browser tests 
+3. Run `npm run test` in your terminal to run cross browser tests 
